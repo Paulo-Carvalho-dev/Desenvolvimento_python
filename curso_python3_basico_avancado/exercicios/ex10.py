@@ -8,11 +8,12 @@ letra_apareceu_mais_vezes = ''
 
 while i < len(frase):
     letra_atual = frase[i]
-    quantidade_apareceu_mais_vezes_atual = frase.count(letra_atual)
     
     if letra_atual == ' ':
         i += 1
         continue
+    
+    quantidade_apareceu_mais_vezes_atual = frase.count(letra_atual)
 
     if quantidade_apareceu_mais_vezes < quantidade_apareceu_mais_vezes_atual:
         quantidade_apareceu_mais_vezes = quantidade_apareceu_mais_vezes_atual
