@@ -8,8 +8,8 @@ se ele vem depois primeiro ele acumula depois ele mostra o resultado
 """
 numero = 0
 
-while numero < 21:
-    print(numero)
+while numero < 20:
     numero += 1
+    print(numero)
 
 print('Fim...')
