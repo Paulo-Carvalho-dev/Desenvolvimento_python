@@ -19,3 +19,10 @@
 
 # print('Aquele laço pode ter repetições infinitas. Voce tentou.')
 
+texto = 'texto'
+
+novo_letra = ''
+for letra in texto:
+    novo_letra += f'*{letra}'
+    print(letra)
+print(novo_letra + '*')
