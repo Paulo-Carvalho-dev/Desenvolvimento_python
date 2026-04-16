@@ -17,10 +17,12 @@ usuário.
 
 palavra_secreta = 'perfume'
 letra_acertadas = ''
+numero_tentativas = 0
 
 # Criamos uma laço infinito com while
 while True:
     letra_digitada = input('Digite uma letra: ')
+    numero_tentativas += 1
 
     if len(letra_digitada) > 1:
         print('Digite apenas uma letra: ')
@@ -41,3 +43,4 @@ while True:
     if palavra_formada == palavra_secreta:
         print('VOCÊ GANHOU PARABÉNS!')
         print('A palavra é ', palavra_secreta)
+        print('Tentativas: ', numero_tentativas)
