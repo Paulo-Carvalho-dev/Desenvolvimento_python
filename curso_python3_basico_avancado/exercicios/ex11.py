@@ -15,6 +15,9 @@ Faça a contagem de tentativas do seu
 usuário.
 """
 
+palavra_secreta = 'perfume'
+letra_acertadas = ''
+
 # Criamos uma laço infinito com while
 while True:
     letra_digitada = input('Digite uma letra: ')
@@ -23,4 +26,12 @@ while True:
         print('Digite apenas uma letra: ')
         continue
 
-    print('Bora')
+    if letra_digitada in palavra_secreta: 
+        letra_acertadas += letra_digitada
+
+    for letra_secreta in palavra_secreta:
+        if letra_secreta in letra_acertadas:
+            print(letra_secreta)
+        else:
+            print('*')
+            
