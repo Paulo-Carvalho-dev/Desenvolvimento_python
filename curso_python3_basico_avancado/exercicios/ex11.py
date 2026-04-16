@@ -14,7 +14,7 @@ na palavra secreta.
 Faça a contagem de tentativas do seu
 usuário.
 """
-
+import os
 palavra_secreta = 'perfume'
 letra_acertadas = ''
 numero_tentativas = 0
@@ -41,6 +41,7 @@ while True:
     print('Palavra formada', palavra_formada)
 
     if palavra_formada == palavra_secreta:
+        os.system('clear')
         print('VOCÊ GANHOU PARABÉNS!')
         print('A palavra é ', palavra_secreta)
         print('Tentativas: ', numero_tentativas)
