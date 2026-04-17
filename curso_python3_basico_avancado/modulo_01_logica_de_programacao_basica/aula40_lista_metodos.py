@@ -16,6 +16,8 @@ lista = [10, 20, 30, 40] # create
 # print(lista[2])
 
 lista.append(50)
+lista.pop()
 lista.append(60)
 lista.append(70)
+lista.pop()
 print(lista)
