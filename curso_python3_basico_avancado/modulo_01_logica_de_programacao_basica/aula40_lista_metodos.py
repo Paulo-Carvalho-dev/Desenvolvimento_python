@@ -9,8 +9,13 @@ Create Read Update   Delete
 Criar, ler, alterar, apagar = lista[i] (CRUD)
 """
 #        0   1   2   3   4   5   6
-lista = [10, 20, 30, 40, 50, 60, 70] # create
-lista[2] = 300 # update
-del lista[2] # delete
+lista = [10, 20, 30, 40] # create
+# lista[2] = 300 # update
+# del lista[2] # delete
+# print(lista)
+# print(lista[2])
+
+lista.append(50)
+lista.append(60)
+lista.append(70)
 print(lista)
-print(lista[2])
